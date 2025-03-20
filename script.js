@@ -15,9 +15,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const searchInput = document.getElementById("search");
     const items = document.querySelectorAll(".itemexample");
     const listContainer = document.querySelector(".list");
-    const path = document.getElementById("xxx");
+    const path1 = document.getElementById("xxx1");
+    const path2 = document.getElementById("xxx2");
+    const path3 = document.getElementById("xxx3");
 
-    path.innerHTML = document.location 
+    path1.innerHTML = document.location 
+    path2.innerHTML = document.url 
+    path3.innerHTML = document.path 
 
     searchInput.addEventListener("input", function () {
         const searchText = searchInput.value.toLowerCase();
