@@ -18,10 +18,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const path1 = document.getElementById("xxx1");
     const path2 = document.getElementById("xxx2");
     const path3 = document.getElementById("xxx3");
+    const path4 = document.getElementById("xxx4");
 
     path1.innerHTML = document.location 
     path2.innerHTML = document.url 
     path3.innerHTML = document.path 
+    path4.innerHTML = window.opener
 
     searchInput.addEventListener("input", function () {
         const searchText = searchInput.value.toLowerCase();
