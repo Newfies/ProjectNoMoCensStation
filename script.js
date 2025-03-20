@@ -15,15 +15,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const searchInput = document.getElementById("search");
     const items = document.querySelectorAll(".itemexample");
     const listContainer = document.querySelector(".list");
-    const path1 = document.getElementById("xxx1");
-    const path2 = document.getElementById("xxx2");
-    const path3 = document.getElementById("xxx3");
-    const path4 = document.getElementById("xxx4");
-
-    path1.innerHTML = document.location 
-    path2.innerHTML = document.url 
-    path3.innerHTML = document.path 
-    path4.innerHTML = window.opener
 
     searchInput.addEventListener("input", function () {
         const searchText = searchInput.value.toLowerCase();
@@ -70,8 +61,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     })
     .catch(error => console.error("Error loading JSON:", error));
-
-    if (window.opener && window.opener !== window) {
-        console.log('Likely opened inside about:blank');
-    }
 });
