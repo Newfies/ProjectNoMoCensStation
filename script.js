@@ -68,4 +68,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     })
     .catch(error => console.error("Error loading JSON:", error));
+
+    if (window.opener && window.opener !== window) {
+        console.log('Likely opened inside about:blank');
+    }
 });
