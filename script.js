@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const listContainer = document.querySelector(".list");
     const path = document.getElementById("xxx");
 
-    path.innerHTML = document.path
+    path.innerHTML = document.location 
 
     searchInput.addEventListener("input", function () {
         const searchText = searchInput.value.toLowerCase();
